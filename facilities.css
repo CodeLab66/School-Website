@@ -305,7 +305,7 @@ body {
         font-size: 7vw;
     }
     .ContentSection{
-        margin: 0 auto 400px auto;
+        margin: 0 auto 100vh auto;
     }
 }
 
