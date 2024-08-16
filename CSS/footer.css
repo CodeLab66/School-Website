@@ -1,0 +1,153 @@
+footer {
+    background-color: rgb(4, 0, 114);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.social-media {
+    flex: 1;
+    min-width: 200px;
+    margin: 15px 0;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    flex-shrink: 0;
+    padding-left: 80px;
+}
+
+.contact-item span {
+    display: block;
+    text-align: center;
+}
+
+.social-icon {
+    width: 20px;
+    vertical-align: text-top;
+    margin-right: 15px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgb(4, 0, 114);
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(4, 0, 114);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    .contact-info,
+    .social-media,
+    .footer-bottom {
+        margin-bottom: 15px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+
+    .social-media p {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .contact-item,
+    .footer-bottom p {
+        margin: 10px 0;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-size: 0.7rem;
+    }
+
+    .contact-item i {
+        margin-right: 5px;
+        padding: 0;
+    }
+
+    .social-media a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ddd;
+    }
+
+}

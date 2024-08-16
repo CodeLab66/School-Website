@@ -1,0 +1,148 @@
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: rgb(4, 0, 114);
+    border: 5px solid rgb(4, 0, 114);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    display: flex;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 75px;
+    border-radius: 5px;
+}
+
+.navbar-list li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.navbar-list li:nth-child(8) {
+    margin: 0 0 0 330px;
+    text-align: center;
+}
+
+.navbar-list .menu {
+    display: none;
+}
+
+.navbar-list li a {
+    font-size: 2vh;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-list li a:hover{
+    font-weight: bold;
+}
+
+.sidebar-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40vw;
+    z-index: 3;
+    background-color: rgba(8, 3, 156, 0.836);
+    backdrop-filter: blur(5px);
+    box-shadow: -10 0 10 rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar-list li {
+    list-style: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.sidebar-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-list li a:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar-list .menu a{
+    visibility: hidden;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .navbar .logo img {
+        width: 6vw;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-list li {
+        margin: 5px 5px;
+    }
+
+    .navbar-list li a {
+        font-size: 14px;
+    }
+
+    .navbar .menu{
+        display: none;
+        visibility: hidden;
+    }
+
+    .sidebar-list .menu{
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .navbar-list .hideonMobile{
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        object-fit: contain;
+    }
+
+    .navbar .logo img{
+        width: 10vw;
+    }
+
+    .navbar .menu{
+        display: flex;
+        visibility: visible;
+        margin-left: 30vw;
+    }
+
+}

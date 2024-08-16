@@ -1,0 +1,90 @@
+.Messages{
+    display: flex;
+    justify-content: center;
+}
+
+.box1 , .box2 , .box3 {
+    max-width: 30%;
+    margin-top: 40px;
+    padding: 3vw;
+    background-color: #fff;
+    box-shadow: 1px 3px 8px rgb(122, 122, 122);
+    border-radius: 5px;
+    margin-right: 3vh;
+}
+
+.mission-para , .vision-para , .value-para, .message-para , .objective-para , .honour-para{
+    margin-top: 1vh;
+}
+
+.vision, .value , .honourcode{
+    margin-top: 8vh;
+}
+
+.box1 h2, .box2 h2, .box3 h2{
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 173, 2);
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 2px;
+}
+
+@media (max-width: 1024px) {
+    .box1 {
+        justify-self: start;
+        max-width: 20%;
+    }
+    .box3 {
+        justify-self: end;
+        max-width: 20%;
+    }
+    .box2 {
+        justify-self: stretch;
+        max-width: 40%;
+    }
+
+    .box1 h2, .box2 h2, .box3 h2{
+        font-size: 19px;
+    }
+
+    .mission-para , .vision-para , .value-para, .message-para , .objective-para , .honour-para{
+        margin-top: 0.5vh;
+        font-size: 13px;
+        text-align: start;
+        
+    }
+    .vision, .value , .honourcode{
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .Messages {
+        flex-direction: column;
+    }
+    .box1 {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .box3 {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .box2 {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .box1 h2, .box2 h2, .box3 h2{
+        font-size: 18px;
+    }
+
+    .mission-para , .vision-para , .value-para, .message-para , .objective-para , .honour-para{
+        margin-top: 0.5vh;
+        font-size: 13px;
+        text-align: start;
+        
+    }
+    .vision, .value , .honourcode{
+        margin-top: 3vh;
+    }
+}

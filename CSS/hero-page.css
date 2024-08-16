@@ -1,0 +1,104 @@
+.hero-page {
+    width: 100%;
+    height: 610px;
+    background-image: url(images/hero-page-background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 310px;
+    text-shadow: rgb(4, 0, 114) 8px 11px 10px;
+}
+
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 30px;
+        padding-top: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-page {
+        height: 410px;
+        background-position: end;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        padding-top: 220px;
+    }
+}
+
+
+.vision-page {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-image: url(images/vision-background.jpg);
+    box-shadow: 13px 15px 15px grey;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+.vision-text {
+    background-color: rgba(146, 146, 146, 0.69);
+    border: 1px solid rgba(146, 146, 146, 0.69);
+    box-shadow: 5px 5px 22px rgba(43, 88, 0, 0.853);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px 10px;
+    width: 50%;
+    transition: transform 0.25s linear, background-color 0.25s linear;
+}
+
+.vision-text:hover {
+    background-color: rgba(176, 176, 176, 0.82);
+    transform: translateY(-10px);
+}
+
+.vision-text h2 {
+    font-size: 3em;
+    color: black;
+    text-shadow: rgb(180, 181, 179) 8px 11px 10px;
+}
+
+.vision-text p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 2vw;
+}
+
+@media (max-width: 1512px) {
+    .vision-page {
+        height: auto;
+        flex-direction: column;
+    }
+    .vision-text {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .vision-text h2 {
+        font-size: 2em;
+    }
+    .vision-text p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    .vision-text h2 {
+        font-size: 1.5em;
+    }
+    .vision-text p {
+        font-size: 0.7em;
+    }
+}

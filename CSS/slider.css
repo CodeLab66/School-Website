@@ -1,0 +1,94 @@
+.gallery {
+    margin: 55px 0 10px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.galleryimageslider {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.galleryimageslider .imageslider {
+    width: 70%;
+    height: 500px;
+    box-shadow: rgb(38, 57, 77) 0px 30px 40px -10px;
+    overflow: hidden;
+}
+
+.galleryimageslider .imageslider figure {
+    position: relative;
+    width: 900%;
+    height: 500px;
+    margin: 0;
+    left: 0;
+    animation: 36s slider infinite;
+}
+
+.galleryimageslider .imageslider figure img {
+    width: 11.11%;
+    height: 100%;
+    float: left;
+    object-fit: contain;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 0;
+    }
+    12.5% {
+        left: -100%;
+    }
+    22.5% {
+        left: -100%;
+    }
+    25% {
+        left: -200%;
+    }
+    35% {
+        left: -200%;
+    }
+    37.5% {
+        left: -300%;
+    }
+    47.5% {
+        left: -300%;
+    }
+    50% {
+        left: -400%;
+    }
+    60% {
+        left: -400%;
+    }
+    62.5% {
+        left: -500%;
+    }
+    72.5% {
+        left: -500%;
+    }
+    75% {
+        left: -600%;
+    }
+    85% {
+        left: -600%;
+    }
+    87.5% {
+        left: -700%;
+    }
+    95.5% {
+        left: -700%;
+    }
+    97.5% {
+        left: -800%;
+    }
+    100% {
+        left: -800%;
+    }
+}
+
+
