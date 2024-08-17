@@ -270,6 +270,12 @@ body {
     color: white;
 }
 
+.galleryimageslider .imageslider{
+    box-shadow: rgb(38, 57, 77) 0px 0px 10px -10px;
+}
+
+
+
 @media (max-width: 1024px) {
     .container{
         height: 450px;
@@ -283,6 +289,9 @@ body {
     }
     .box1image,.box2image,.box3image,.box4image,.box5image{
         height: 6vh;
+    }
+    .galleryimageslider{
+        margin: 28vh 0 0 0;
     }
 }
 
