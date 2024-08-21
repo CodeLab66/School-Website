@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 100%;
+    height: 1000vh;
+}
+.background{
+    width: 100%;
+    height: 700px;
+    background-image: url(CSS/images/activities_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headingContainer{
+    width: 70%;
+    height: 20vw;
+    margin: 0 auto;
+    background-color: rgba(113, 113, 113, 0.523);
+    border: 2px solid rgba(113, 113, 113, 0.523);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6.5vw;
+    color: black;
+}
+
+
+.celebration{
+    background-color: #2C5F2D;
+    padding-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+.celebration > .mainheading{
+    width: 100%;
+    height: 8vw;
+    background-color: #2C5F2D;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+.celebrationCard > .head{
+    width: 90%;
+    height: 4vw;
+    background-color: #97BC62FF;
+    border: 2px solid #97BC62FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+.celebrationCard > .info{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #E3B448;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto;
+}
+.celebrationCard > .info > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.celebrationCard > .info > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.celebrationCard > .info > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.celebrationCard > .info > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+    border-bottom-right-radius: 20px;
+}
+.celebrationCard:hover > .head{
+    background-color: #E3B448;
+    border: 2px solid #E3B448;
+    color: black;
+}
+.celebrationCard:hover > .info{
+    background-color: #97BC62FF;
+    color: white;
+    font-weight: bold;
+} 
+
+
+/* .defenceheading{
+    width: 90%;
+    height: 4vw;
+    background-color: #97BC62FF;
+    border: 2px solid #97BC62FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+.defenceinfo{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #E3B448;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto 3vw auto;
+}
+.defenceinfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.defenceinfo > .content > .box1{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.defenceinfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+.defenceinfo > .content > .box3{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.independenceheading{
+    width: 90%;
+    height: 4vw;
+    background-color: #97BC62FF;
+    border: 2px solid #97BC62FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+.independenceinfo{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #E3B448;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto 3vw auto;
+}
+.independenceinfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.independenceinfo > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.independenceinfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.independenceinfo > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+
+
+.quaidheading{
+    width: 90%;
+    height: 4vw;
+    background-color: #97BC62FF;
+    border: 2px solid #97BC62FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+.quaidinfo{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #E3B448;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto 3vw auto;
+}
+.quaidinfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.quaidinfo > .content > .box1{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.quaidinfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+.quaidinfo > .content > .box3{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.ptmheading{
+    width: 90%;
+    height: 4vw;
+    background-color: #97BC62FF;
+    border: 2px solid #97BC62FF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+.ptminfo{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #E3B448;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto 3vw auto;
+}
+.ptminfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.ptminfo > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.ptminfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.ptminfo > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+} */
+
+
+.activities{
+    background-color: #FAD744;
+    padding-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+.activities > .mainheading{
+    width: 100%;
+    height: 8vw;
+    background-color: #FAD744;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+.activitiesCard > .head{
+    width: 90%;
+    height: 4vw;
+    background-color: #2B3252;
+    border: 2px solid #2B3252;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+.activitiesCard > .info{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #EF5455;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto;
+}
+.activitiesCard > .info > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.activitiesCard > .info > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.activitiesCard > .info > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.activitiesCard > .info > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+    border-bottom-right-radius: 20px;
+}
+.activitiesCard:hover > .head{
+    background-color: #EF5455;
+    border: 2px solid #EF5455;
+    color: black;
+}
+.activitiesCard:hover > .info{
+    background-color: #2B3252;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* .ddgheading{
+    width: 100%;
+    height: 4vw;
+    background-color: lightgreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.ddginfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+.ddginfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.ddginfo > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.ddginfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.ddginfo > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+
+
+.dgheading{
+    width: 100%;
+    height: 4vw;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.dginfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+.dginfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.dginfo > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.dginfo > .content > .box2{
+    flex: 1 1 0;
+    background-position: center;
+}
+.dginfo > .content > .box3{
+    flex: 1 1 0;
+    background-position: center;
+}
+
+
+.assemblyheading{
+    width: 100%;
+    height: 4vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.assemblyinfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+.assemblyinfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.assemblyinfo > .content > .box1{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.assemblyinfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+.assemblyinfo > .content > .box3{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.armymuseumheading{
+    width: 100%;
+    height: 4vw;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.armymuseuminfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+.armymuseuminfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.armymuseuminfo > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.armymuseuminfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.armymuseuminfo > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+
+
+.lumsheading{
+    width: 100%;
+    height: 4vw;
+    background-color: aqua;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.lumsinfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+.lumsinfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.lumsinfo > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.lumsinfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.lumsinfo > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+
+
+.rescueheading{
+    width: 100%;
+    height: 4vw;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.rescueinfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+.rescueinfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.rescueinfo > .content > .box1{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.rescueinfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+}
+.rescueinfo > .content > .box3{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.tableheading{
+    width: 100%;
+    height: 4vw;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.tableinfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+.tableinfo > .content{
+    width: 100%;
+    height: 25vw;
+    margin: 0 auto;
+    display: flex;
+}
+.tableinfo > .content > .box1{
+    font-size: 1.25vw;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.tableinfo > .content > .box2{
+    flex: 1 1 0;
+    background-image: url(gallery/1.jpeg);
+    background-position: center;
+}
+.tableinfo > .content > .box3{
+    flex: 1 1 0;
+    background-image: url(gallery/5.jpeg);
+    background-position: center;
+} */

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - ASF Public School</title>
+    <link rel="stylesheet" href="admission.css">
+    <link rel="stylesheet" href="CSS/header.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="CSS/images/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul class="navbar-list">
+                    <li class="hideonMobile"><a href="index.html">Home</a></li>
+                    <li class="hideonMobile"><a href="facilities.html">Facilities</a></li>
+                    <li class="hideonMobile"><a href="key-features.html">Key-Features</a></li>
+                    <li class="hideonMobile"><a href="activity.html">Activities</a></li>
+                    <li class="hideonMobile"><a href="faculty.html">Faculty</a></li>
+                    <li class="hideonMobile"><a href="admission.html">Admission</a></li>
+                    <li class="hideonMobile"><a href="contact.html">Contact</a></li>
+                    <span class="menu">
+                        <li onclick=showSidebar() class="menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="35px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg></a></li>
+                    </span>
+                </ul>
+                <ul class="sidebar-list">
+                    <li onclick=hideSidebar() class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="35px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="key-features.html">Key-Features</a></li>
+                    <li><a href="activity.html">Activities</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li onclick=showSidebar() class="menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="35px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+
+            <script>
+                function showSidebar() {
+                    const sidebar = document.querySelector(".sidebar-list")
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar() {
+                    const sidebar = document.querySelector(".sidebar-list")
+                    sidebar.style.display = 'none'
+                }
+            </script>
+
+        </div>
+    </header>
+
+    <div class="background">
+        <div class="headingContainer">
+            <div class="heading">
+                <h2>Admission</h2>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
